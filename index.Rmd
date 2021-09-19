@@ -1,0 +1,71 @@
+---
+title: "Voyant"
+author: "Pulari and Nitya"
+date: "9/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Group Leader: Pulari Baskar
+
+
+
+# Research hypothesis: 
+For this project on Data Visualization, we decided to look at the theme of marriage across the works of female American authors in the 19th century. The primary questions that we seeked to address were: How relevant is the theme of marriage in the work of female writers? In what contexts does this theme arise? Is marriage more of a domestic theme or a financial one? How does the theme evolve over the course of the century?
+
+# Corpus Description 
+We created one chronological master corpus containing the works of all four of the authors, in order to be able to detect general trends across their works spanning over the century.  We also made four other corpora, one each for the female American writers of the 19th century that we picked: Fanny Fern (1811-1872), Harriet Beacher Stowe (1811-1896), Louisa May Alcott (1832-1888), and Kate Chopin (1850-1904). This helped us pick out specific factors/contexts specific to the work of each author, and made it more effective for us to not mistake certain patterns unique to an author (whose corpus was of a higher volume) for general trends.
+
+<iframe style='width: 600px; height: 400px;' src='https://voyant-tools.org/?corpus=dd7f3c13c9576a4b1b108743482215ec&query=marriage*&query=marry*&query=married*&view=Trends'data-external = '1'>	</iframe>
+
+
+# KEY:
+HSB- Harriet Beacher Stowe
+FAF- Fanny Fern
+LMA- Louisa May Alcott
+KCO-Kate Chopin
+
+The reason we narrowed in on these four authors in particular was because together, Alcott, Stowe, Fern, and Chopin cover the span of almost the entire century. We believed that by working with a comprehensive timespan we would be able to procure the most accurate and representative data. Though we could not procure texts from each part of the century, we realized that the authors being born at different times were bound to come from different historical circumstances, hence reflecting different/changing social perspectives. Additionally, the four authors did not write books of the same subjects: while Alcott wrote young adult fiction, Stowe wrote more on historical themes, whereas both Fern and Chopin took up more socio-political ones that directly pertained to gender.
+
+# Summary 
+All the works in the corpus of the four authors were concentrated in the latter half of the 19th century. The longest work in the combined corpus of all four authors was “A Key to Uncle Tom’s Cabin (1852)” by Stowe, and the shortest work Alcott’s “Mountain Laurel and Maiden Hair” (1887). The timeline of texts available to us were between the years 1852 to 1899. Most of the unique words in each book were closely tied to either a character or primary narrative theme in the novel- none of the unique words were related to the theme of marriage, thus indicating that marriage was a common, universally relevant term across all the words. 
+
+
+# Frequency Comparison
+The highest frequencies of the usage of terms “Marry”, “Married”, and “Marriage” seem to spike in the 1870s. Across all the corpora, “Married” was referred to more times than “Marriage”, potentially indicating that the act of being wed played less of an active role in the stories written by these authors, instead taking up a passive state of life factual role. That is, the event itself wasn’t as relevant to the plots as much as the act of being/getting married was. 
+
+<iframe style='width: 600px; height: 400px;' src='https://voyant-tools.org/?corpus=dd7f3c13c9576a4b1b108743482215ec&query=married*&query=marriage*&query=marry*&view=CorpusTerms'data-external = '1'>	</iframe>
+
+This was further verified by an analysis of the terms “Husband”, “Wife”, “Bride”, and “Groom. “Husband” was mentioned less frequently than “Wife”, and “Bride” was mentioned far more than “Groom” though the terms of the former pairing occurred far more than the latter . The higher frequency of “Bride” rather than the “Groom” could potentially suggests that perhaps weddings were a far more important event in the woman’s life than the man’s. However, mentions of both “Bride” and “Groom” drop considerably towards the end of the century, whereas “Husband” and “Wife” seem to increase around the same time. 
+
+<iframe style='width: 600px; height: 400px;' src=' https://voyant-tools.org/?corpus=dd7f3c13c9576a4b1b108743482215ec&query=groom*&query=bride*&query=wife*&query=husband*&view=CorpusTerms'data-external = '1'>	</iframe>
+
+Additionally, we noticed that “Money” is mentioned significantly more than “Marriage” or “Married”. Though this is not necessarily a unique trend as money is relevant in several other contexts apart from marriage, we expected  there to be a deviation in this trend in the work of female authors. However, terms relating to “Money”, such as “Wealth”, “Wealthy”, “Profits”, “Rich”, and “Banks” did not occur more frequently than “Marriage” and its primary related terms.
+
+
+# Collocation/Correlation
+Across the works of all the authors, it became interesting to notice the variations in collocates between the words “Married” and “Marriage”. The most notable collocates of “Married” were “Wife”, “Children”, “Family”, “Love”. On the other hand, the collocates of “Marriage” were “Contract”, “Relation”, “Service”, “Deaths”. It is evident that the tone of the collocates for these two closely related terms is quite disparate. The former seems to indicate what one would expect in the aftermath of being wed, whereas the latter reveals the nature of such a relationship.  More specifically, the collocates of “Marriage” seem more functional, and are also terms that can be relevant in contexts discussing financial situations.
+
+<iframe style='width: 600px; height: 400px;' src='https://voyant-tools.org/?corpus=dd7f3c13c9576a4b1b108743482215ec&query=marriage*&query=married*&view=CorpusTerms'data-external = '1'>	</iframe>
+
+“Money” was not a collocate of “Marriage”, but the two terms did have a fairly notable correlation. We also decided to look at mentions of “Wedding”, “Engaged”, “Engagement”, “Proposal”, “Wedding Ring”, to identify the contexts in which marriage-related terms were being used, specifically to see if they related to financial contexts. One limitation that we discovered immediately was that the words “Engaged” and “Proposal” could be used in contexts outside of marriage. The term “Wedding” did not have “Marriage” (or any word related to the root word Marry) in its collocates; instead, it focussed on material aspects of the actual wedding (For e.g. Dress, Gown, Ring, Day).
+
+
+#Third Tool
+For our last tool, we chose to work with ‘Bubblelines’. We made this decision because though the “Trends”graph gave us an overall idea as to how certain words were being used across the corpora of the four authors, ‘Bubblelines’ would help us see how relevant the terms were across the individual works of each author. Additionally, this tool helps us visualize how often certain terms overlap with others over the course of a particular work. This further helped us to see how true our hypotheses on themes relevant to marriage. 
+
+The Bubblelines Tool revealed to us that “Marriage”, although not uniformly,  was a consistent term across all the works. While we realized that “Money” and “Marriage” did not bubble together, the chances of “Rich” and “Marriage”, and in fact, even “Poor” and “Marriage” bubbling together were higher in the works of Stowe(NOTE: “Poor” is not as accurate an indicator as “Rich” with references to financial status as it can be used in other contexts as well). Though “Rich” was not mentioned as an immediate collocate of “Marriage”, it became clear to us that the relevance of the two terms did overlap considerably.  
+
+<iframe style='width: 600px; height: 400px;' src='https://voyant-tools.org/?corpus=dd7f3c13c9576a4b1b108743482215ec&query=marry*&query=marry&query=married*&query=poor*&query=marriage*&query=rich*&docId=0a2a82bc8cbbf21febf1b7fd873be931&docId=c6e77c7a4e88166034cfed5f9c558ef8&docId=f00e491c794a79da72308a4c8371fb0b&docId=1be55e7a9c80a741262f299e1423aea0&docId=81c57e8694f2e81b4ac37ffa0f11320c&docId=26d51b621b6b59c8d9c09e02d18bfcad&docId=3aad31d9a4aa7812e84cd4ef37b554f5&docId=f92a45bedf04818135c0aada34074912&docId=9bd2cace4edb0d16bb8adfb8732a44c0&docId=60c73dc45c1b00020cf86200144352ca&docId=1d7131d707f9db6f6fe5be78719362fb&docId=f977c8c67961eaa2a9062dd6ce6d46c2&docId=e9de6fef7db283c21d2890e440183bb5&docId=ca870cd90b601e5d431733d74648c448&docId=328fbb3a14c5b4bdad0db0a49b8d7ffc&docId=fe021b8e505bddafaa34090e5554aabe&docId=4eacfa7f1eb79c016ec484065438b897&docId=75b12fc7216eef7c8bc8e56a41b14c84&docId=a6677a7dac9165134560443b2f996f23&docId=76b5dba9955eefc56d3943da3a2cefdc&docId=86abf56805441a93006e9a20afb48adf&docId=ad0e0f4008cce43889dec1f689c7d2c2&docId=b727d994504cf07c35d0b93dfe828934&docId=333b3d5dee1e3b5020ef12f0e1d30dda&docId=b1de2663118dcb53e8027c2a3d97b7f3&docId=c7f2c3d6004497f6d546292ec931c786&docId=b7232343420b5c1508996c9ef183d7e1&docId=e5789654f5288f80ce0c4a6f0f8a223a&docId=6b0436905379ad071632a440db0ce1c9&docId=41256921ba8b75aca1a1b5a94bd5be40&docId=6dae7e33c9aa48bcb726db12254c8933&view=Bubblelines'data-external = '1'>	</iframe>
+
+
+# Conclusion 
+Based on our work, we were able to largely address our initial research questions. Marriage does seem to be a consistent and fairly relevant theme across the work of female writers from America in the 19th century (even across different styles/genres). Marriage doesn’t appear to play as much of a role in building the narrative as it does to describe a period in a character’s life/their social status. The term is used in a complex framework of meaning, indicating that it has both domestic and social/financial significance. Though we had set out to understand how the theme of marriage evolved over the 1800s we were only able to study the latter half of the century; unfortunately, however, we could not identify any distinct evolution in the theme. 
+
+
+# Reflection 
+For both of us, this was the first time working with Voyant and producing a research project of this nature. Though we did give ourselves a considerable amount of time to work on each aspect of the project, it took us a while to get comfortable making analyses and drawing conclusions based on the information Voyant provided us with. The data produced from each corpus was fairly overwhelming, and we had to learn how to discard information irrelevant to our hypothesis. Additionally, we also had to get more comfortable with distinguishing between facts and factoids, in order to be able to draw reasonable conclusions without stating the obvious. 
+
+However, not only did we quickly manage to develop a good team dynamic between the both of us, we also made steady progress everyday in terms of acquainting ourselves with Voyant and the different tools it has to offer.  Watching videos/reading pieces on how different people had made use of Voyant also gave us some tips on how to go about using the tools, and identifying which of the tools would be most useful for our research. Although we were not able to find as interesting a pattern/trend as we had initially thought we would, we believe that we’ve reached a stage where we have clarity on what worked for us, what didn’t, and are prepared to carry forward our learning to the next project- Voyant or not!
